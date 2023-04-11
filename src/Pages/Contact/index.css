@@ -1,0 +1,38 @@
+.contact-section{
+    margin-top: var(--header-height);
+    background-color: var(--sec-background);
+    width: 100%;
+    max-width: var(--max-width);
+    height: auto;
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 2%;
+}
+.contact-section h1{
+    color: var(--white);
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-media span{
+    color: var(--white);
+    height: auto;
+}
+.react-icons{
+    font-size: 35px;
+}
+.linkedin, .github, .youtube, .email{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    height: auto;
+}

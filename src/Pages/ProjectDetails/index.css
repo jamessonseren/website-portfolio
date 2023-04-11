@@ -1,0 +1,42 @@
+section.projectDetails{
+    width: 100%;
+    max-width: var(--max-width);
+    background-color: var(--sec-background);
+    height: auto;
+    min-height: 100vh;
+    padding: 15px 2%;
+
+}
+.not-found{
+    color: white;
+    margin-top: calc(var(--header-height) + 5%);
+}
+.project-detail{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: calc(var(--header-height));
+    color: var(--light);
+}
+.project-detail h1{
+    margin: 35px 0;
+}
+.project-detail p{
+    margin-top: 15px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.project-detail img{
+    width: 100%;
+    max-width: 650px;
+}
+.project-detail a{
+    background-color: var(--yellow-light);
+    color: var(--dark);
+    font-weight: 800;
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin: 15px;
+}

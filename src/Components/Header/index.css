@@ -1,0 +1,83 @@
+:root{
+    --header-height:15vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: var(--yellow-light);
+    height: var(--header-height);
+    width: 100%;
+    max-width: var(--max-width);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    z-index: 999;
+    box-shadow: 2px 4px 5px rgba(255, 255, 255, 0.205);
+    scroll-behavior: smooth;
+
+}
+
+.logo span{
+    font-size: 2rem;
+    font-weight: bold;
+    height: auto;
+    color:var(--dark)
+}
+.logo p{
+    color: var(--dark);
+    font-weight:bold;
+}
+.menu{
+    width: 50%;
+    height: auto;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark);
+    font-weight: bold;
+    
+}
+.menu-icon{
+    display: none;
+    color: var(--dark)
+
+}
+.contact{
+    padding: 8px;
+    border-radius: 8px;
+    transition: all .8s;
+    background-color: var(--dark);
+    color:var(--white);
+}
+
+
+.contact:hover{
+    background-color: var(--main-color-light);
+    color:var(--black);
+}
+.projects:hover{
+    text-decoration: underline;
+
+} 
+.about:hover{
+    text-decoration: underline;
+}
+.menu-icon{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px){
+    .menu-icon{
+        display: block;
+        font-size: 2rem;
+    }
+    nav.menu{
+        display: none;
+    }
+   
+
+    
+}

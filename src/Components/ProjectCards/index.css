@@ -1,0 +1,9 @@
+.card-projects{
+    width: 300px;
+    background-color: var(--light);
+    margin: 15px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
