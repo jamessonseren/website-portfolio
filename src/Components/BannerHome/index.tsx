@@ -36,7 +36,7 @@ export default function BannerHome() {
                     <FaNodeJs />
                     <FaDatabase />
                 </div>
-                <a href="./cv_Jamesson_seren.pdf" download onClick={handleDownloadClick}>Download CV
+                <a href="/Assets/Files/cv_Jamesson_seren.pdf" download onClick={handleDownloadClick}>Download CV
                     
                 </a>
 
