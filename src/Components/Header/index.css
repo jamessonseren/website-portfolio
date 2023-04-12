@@ -78,6 +78,9 @@ header{
         display: none;
     }
    
-
-    
+}
+@media screen and (max-width: 276px){
+    header{
+        height: auto;
+    }
 }
