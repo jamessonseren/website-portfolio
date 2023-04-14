@@ -44,8 +44,7 @@ export default function BannerHome() {
             </div>
             
             <div className='video'>
-                <iframe src="https://www.youtube.com/embed/pT2YI9m2n9E" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>
-            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8q2TbIMNpys" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>            </div>
             <div className='mobile-content'>
                 <p>Please, feel free to take a look at my website. You can watch my video to understand more about me
                     and my projects.

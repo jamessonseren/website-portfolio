@@ -7,7 +7,7 @@ const projectsList = () => {
             shortDescription: "Fullstack project with NextJS, NodeJS, PostgreSQL, and React Native.",
             image:"/Assets/Images/under-construction.png",
             description:"This is my new FullStack project under development! With this application, waiters will be able to take orders directly at the tables, without needing to go back to the kitchen to inform. The order will arrive automatically through a computer screen in the kitchen, allowing the waiter to stay in the customer service area. To ensure efficiency and security for the users, I have implemented cutting-edge technologies in our project, including NextJS, NodeJS, PostgreSQL, and React Native. Additionally, our passwords are encrypted to protect our users' sensitive information. I use PrismaClient to make the database process simpler and more efficient. And, as we know that mobility is important in a restaurant environment, our project is fully responsive, adapting perfectly to any device.",
-            access:"https://www.google.com"
+            access:""
         },
         {
             id: "54136982",
@@ -15,7 +15,7 @@ const projectsList = () => {
             shortDescription: "Porfotlio website using a variety of technologies including ReactJS.",
             image:"/Assets/Images/porfolio.png",
             description:"This portfolio website was built using a variety of technologies and tools to provide an exceptional experience for users. The foundation of the application is built with HTML and CSS, which are responsible for defining the structure and style of the site. Additionally, React, a popular JavaScript library, was used to create reusable components and manage the application state. To manage the building and packaging of the project's source code, Webpack was used. RoutesApp is responsible for creating routes for each page of the site, allowing for smooth user navigation. Toastify is a library that allows notifications to be displayed to the user in specific cases. The application state is managed by useState. Error 404 was implemented to handle errors that may occur when accessing the site. To handle smooth scrolling and references functionality, useRef was used. The site's responsiveness was ensured for a pleasant user experience on different devices and screens. Additionally, TypeScript was used to ensure the safety and ease of maintenance of the code. Overall, the technologies used in my portfolio website were chosen to create a modern, responsive, and attractive site. The combination of these technologies and tools allows for efficient development and an exceptional user experience.",
-            access:"https://www.google.com"
+            access:"https://jamessonseren.netlify.app/"
         },
         {
             id: "64924236",
