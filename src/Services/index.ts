@@ -3,11 +3,11 @@ const projectsList = () => {
     return [
         {
             id: "53478216",
-            name: "Pizza Orders (Coming soon)",
-            shortDescription: "Fullstack project with NextJS, NodeJS, PostgreSQL, and React Native.",
-            image:"/Assets/Images/under-construction.png",
-            description:"This is my new FullStack project under development! With this application, waiters will be able to take orders directly at the tables, without needing to go back to the kitchen to inform. The order will arrive automatically through a computer screen in the kitchen, allowing the waiter to stay in the customer service area. To ensure efficiency and security for the users, I have implemented cutting-edge technologies in our project, including NextJS, NodeJS, PostgreSQL, and React Native. Additionally, our passwords are encrypted to protect our users' sensitive information. I use PrismaClient to make the database process simpler and more efficient. And, as we know that mobility is important in a restaurant environment, our project is fully responsive, adapting perfectly to any device.",
-            access:""
+            name: "Chef's Pizza",
+            shortDescription: "Fullstack project with NextJS, NodeJS, TypeScript PostgreSQL, and React Native.",
+            image:"/Assets/Images/chefspizza.png",
+            description:"This is a FullStack project designed for restaurant pizza! With this application, Waiters will be able to take orders directly from the client spot in the restaurant, without needing to go back to the kitchen to request the order. The order will arrive automatically through a computer screen in the kitchen, allowing the waiter to stay in the customer service area. To ensure efficiency and security for the users, I have implemented cutting-edge technologies in our project, including NextJS, NodeJS, TypeScript, PostgreSQL, and React Native. Additionally, our passwords are encrypted to protect our users' sensitive information. I use PrismaClient to make the database process simpler and more efficient. And, as we know that mobility is important in a restaurant environment, our project is fully responsive, adapting perfectly to any device.",
+            access:"https://chefs-pizza.netlify.app/"
         },
         {
             id: "54136982",
@@ -33,14 +33,7 @@ const projectsList = () => {
             description: "This ping pong game project, developed using HTML, CSS, and JS, features fluid graphics and animations, providing a pleasant and engaging user experience. The game has a JS logic that limits the size of the field, increasing the difficulty for the player as the level advances. The player faces the computer and must control the paddle with the mouse to hit the ball and prevent the opponent from scoring. When either side scores, the game level increases, making the ball faster and the game even more exciting. The project also includes a two-player mode, so players can challenge each other in an exciting match.",
             access:"https://jamessonseren.github.io/ping-pong/"
         },
-        {
-            id: "64387165",
-            name: "Login Page",
-            shortDescription:"Nice layout of a login page: HTML, CSS, JS",
-            image:"/Assets/Images/login-page.png",
-            description: "This ping pong game project, developed using HTML, CSS, and JS, features fluid graphics and animations, providing a pleasant and engaging user experience. The game has a JS logic that limits the size of the field, increasing the difficulty for the player as the level advances. The player faces the computer and must control the paddle with the mouse to hit the ball and prevent the opponent from scoring. When either side scores, the game level increases, making the ball faster and the game even more exciting. The project also includes a two-player mode, so players can challenge each other in an exciting match.",
-            access:"https://jamessonseren.github.io/login/"
-        },
+        
     ];
 }
 export default projectsList
