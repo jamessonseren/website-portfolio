@@ -12,6 +12,7 @@ export default function BannerSkills() {
     createRef<HTMLDivElement>(),
     createRef<HTMLDivElement>(),
     createRef<HTMLDivElement>(),
+    createRef<HTMLDivElement>(),
   ];
 
   useEffect(()=>{
@@ -68,18 +69,24 @@ export default function BannerSkills() {
         />
         <CardSkill
           ref={cardRefs[4]}
+          title="React Native"
+          image="Assets/Images/react_native.png"
+
+        />
+        <CardSkill
+          ref={cardRefs[5]}
           title="TypeScript"
           image="Assets/Images/typescript.png"
 
         />
         <CardSkill
-          ref={cardRefs[5]}
+          ref={cardRefs[6]}
           title="NodeJs"
           image="Assets/Images/node.png"
 
         />
         <CardSkill
-          ref={cardRefs[6]}
+          ref={cardRefs[7]}
           title="SQL & NoSQL"
           image="Assets/Images/database.png"
 

@@ -1,6 +1,5 @@
 .contact-section{
     margin-top: var(--header-height);
-    background-color: var(--sec-background);
     width: 100%;
     max-width: var(--max-width);
     height: auto;
@@ -9,30 +8,46 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 5px 2%;
+    padding: 5px 5%;
 }
 .contact-section h1{
-    color: var(--white);
+    color: var(--main-color-dark);
 }
 .social-media{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 200px;
     align-items: center;
-    justify-content: space-around;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 15px;
+    overflow-wrap: break-word;
+
 }
-.social-media span{
-    color: var(--white);
-    height: auto;
+.social-media-item{
+    display: flex;
+    margin: 15px 0;
+    overflow-wrap: break-word;
+    
 }
+
 .react-icons{
-    font-size: 35px;
+    font-size:2rem;
 }
+
 .linkedin, .github, .youtube, .email{
     display: flex;
     width: 100%;
     max-width: 500px;
     align-items: center;
     height: auto;
+}
+
+@media screen and (max-width:380px){
+    .social-media-item{
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: .8rem;
+    }
 }

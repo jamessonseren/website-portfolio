@@ -7,9 +7,7 @@
     padding: 15px 2%;
 
 }
-.banner-skills h1{
-    color: var(--main-color-light);
-}
+
 .skill-cards{
     display: flex;
     align-items: center;
@@ -29,7 +27,7 @@
     transition: transform 1s, opacity 0.5s; 
     opacity: 0;
     border-radius: 15px;
-    box-shadow: 2px 4px 5px rgba(177, 177, 177, 0.4);
+    box-shadow: 2px 4px 5px;
     
 }
 .card img{
@@ -38,9 +36,7 @@
     height: auto;
 }
 
-/*.card:nth-of-type(even){
-    transform: translateX(-200%)
-}*/
+
 .showCard{
     transform: translateY(0) rotate(0deg);
     opacity: 1;

@@ -23,10 +23,10 @@
 }
 .project-box article{
     width: 250px;
-    background-color: #d3c2c27e;
+    background-color: var(--light);
     height: 500px;
     border-radius: 8px;
-    box-shadow: 2px 4px 5px rgba(255, 255, 255, 0.205);
+    box-shadow: 2px 4px 5px;
     padding: 5px 1%;
     height: 300px;
     margin: 5px;
@@ -34,16 +34,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: var(--light);
+    color: var(--main-color-dark);
     font-weight: bold;
     transition: all 0.3s ease;
 }
 .project-box article:hover{
-    background-color: var(--light);
+    background-color: var(--yellow-light);
     animation: swing 0.5s ease infinite;
-    color: var(--black);
 
 }
+
 article h1{
     height: auto;
 }
@@ -53,9 +53,13 @@ article img{
     height: auto;
     max-height: 250px;
 }
+article p{
+    text-align: center;
+    line-height: 20px;
+}
 article a{
     color: var(--light);
-    background-color: var(--dark);
+    background-color: var(--main-color-dark);
     padding: 15px;
     border-radius: 8px;
     

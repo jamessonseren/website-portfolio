@@ -22,10 +22,10 @@ header{
     font-size: 2rem;
     font-weight: bold;
     height: auto;
-    color:var(--dark)
+    color:var(--black)
 }
 .logo p{
-    color: var(--dark);
+    color: var(--black);
     font-weight:bold;
 }
 .menu{
@@ -35,20 +35,20 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--dark);
+    color: var(--black);
     font-weight: bold;
     
 }
 .menu-icon{
     display: none;
-    color: var(--dark)
+    color: var(--black)
 
 }
 .contact{
     padding: 8px;
     border-radius: 8px;
     transition: all .8s;
-    background-color: var(--dark);
+    background-color: var(--black);
     color:var(--white);
 }
 
@@ -81,6 +81,13 @@ header{
 }
 @media screen and (max-width: 276px){
     header{
-        height: auto;
+        
+        padding: 1rem;
+    }
+    a.logo span{
+        font-size: 1rem;
+    }
+    a.logo p{
+        font-size: .6rem;
     }
 }

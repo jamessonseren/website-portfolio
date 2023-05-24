@@ -4,7 +4,6 @@
   outline: 0;
   box-sizing: border-box;
   height: 100%;
- 
 }
 
 :root {
@@ -13,15 +12,11 @@
 
   --light: #d3c2c2;
 
-  --dark: #1f1a1a;
+  --sec-background: #F2F2F2;
 
-  --sec-background: rgba(0,0,0,0.4);
+  --yellow-light:#E2F263;
 
-  --yellow-light: #ffcd38;
-
-  --main-color-light: #00FF8C;
-
-  --main-color-dark: #58f5ae;
+  --main-color-dark: #011826;
   
   --max-width: 1200px;
 
@@ -36,7 +31,7 @@ a{
   text-decoration: none;
 }
 body {
-  background-color: var(--dark);
+  background-color: var(--sec-background);
   
 }
 

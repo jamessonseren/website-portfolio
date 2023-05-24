@@ -1,6 +1,5 @@
 .about-section{
     margin-top: var(--header-height);
-    background-color: var(--sec-background);
     width: 100%;
     max-width: var(--max-width);
     height: auto;
@@ -10,7 +9,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 5px 2%;
-    color: var(--white);
+    color: var(--main-color-dark);
 }
 .author-info{
     display: flex;
@@ -26,6 +25,7 @@
 }
 .author-info img{
     border-radius: 100%;
+    box-shadow: 2px 4px 5px;
 }
 .author-info p, .author-info img{
     width: 100%;
