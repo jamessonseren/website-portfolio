@@ -34,6 +34,9 @@ export function MenuDesktop() {
       }, 1000)
     }
   };
+  useEffect(()=>{
+    
+  },[HandleScrollLinkClick])
 
   return (
     <nav className='menu-desktop'>

@@ -21,7 +21,7 @@ export function MenuMobile(props: MenuMobileProps) {
   }, []);
 
   const HandleScrollLinkClick = (to: string) => {
-    if (pathname === "/projects") {
+    if (pathname.startsWith("/projects")) {
       navigate("/");
 
       setTimeout(()=>{
@@ -34,7 +34,7 @@ export function MenuMobile(props: MenuMobileProps) {
               behavior: "smooth",
             });
           }
-      }, 500)
+      }, 1000)
     }
   };
 
