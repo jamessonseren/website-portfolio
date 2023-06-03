@@ -5,10 +5,10 @@
     position: absolute;
     align-items: center;
     top: calc(var(--header-height) - 1px);
-    background-color: var(--yellow-light);
+    background-color: var(--main-color);
     right: 0;
     width: 50vw;
-    height: 80vh;
+    height: auto;
     color: var(--dark);
     font-weight: bold;
     transform: translateX(50%);
@@ -17,8 +17,20 @@
     opacity: 0;
     
 }
-
-
+.menu-mobile a{
+    height: auto;
+    border-top: 1px solid;
+    width: 100%;
+    text-align: center;
+    padding: 25% 0;
+    color: var(--white);
+}
+.contact-mobile{
+    cursor: pointer;
+}
+.contact-mobile:hover{
+    text-decoration: underline;
+}
 .show{
     transform: translateX(0);
     opacity: 1;

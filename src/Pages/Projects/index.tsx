@@ -29,7 +29,7 @@ export default function Projects() {
                             <h1>{project.name}</h1>
                             <img src={project.image}></img>
                             <p>{project.shortDescription}</p>
-                            <Link target="_blank" to={`/projects/${project.id}`}>Check it out</Link>
+                            <Link to={`/projects/${project.id}`}>Check it out</Link>
                             
                         </article>
                     )

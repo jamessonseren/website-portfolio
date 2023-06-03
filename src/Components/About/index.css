@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 5px 2%;
-    color: var(--main-color-dark);
+    color: var(--white);
 }
 .author-info{
     display: flex;

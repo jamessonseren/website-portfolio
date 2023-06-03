@@ -1,67 +1,42 @@
-import './index.css'
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-
-
-
+import "./index.css";
+import { Link } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 
 export default function BannerHome() {
-    function handleDownloadClick() {
-        return toast.success('Download completed',
-            {
-                position: toast.POSITION.TOP_RIGHT,
-                autoClose: 3000,
-                closeButton: false,
+  return (
+    <section className="main-banner">
+      <div className="banner-content">
+        <div className="left">
+          <h5>Welcome to my Website</h5>
+          <motion.h1
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 300 }}
+          >
+            Jamesson Seren
+          </motion.h1>
+          <h4>Software Engineer</h4>
+          <Link to="/projects">
+            <motion.p
+              initial={{ opacity: 0}}
+              animate={{
+                opacity: 1,
+                borderRadius: ["0%", "0%", "50%", "50%", "0%"]
 
-            });
-    }
-
-    return (
-        <section className="main-banner">
-            <div className="left-content">
-                <h1>Welcome to my Website</h1>
-                <p>Please, feel free to take a look at my website. You can watch my video to understand more about me
-                    and my projects. <br></br>
-                    Below there is a button where you can download my CV.
-                </p>
-                <div className='tech-icons'>
-                    <FaHtml5 />
-                    <FaCss3Alt />
-                    <FaJsSquare />
-                    <FaReact />
-                    <SiTypescript />
-                    <FaNodeJs />
-                    <FaDatabase />
-                </div>
-                <a href="/Assets/Files/cv_Jamesson_seren.pdf" download onClick={handleDownloadClick}>Download CV
-                    
-                </a>
-
-
-            </div>
-            
-            <div className='video'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8q2TbIMNpys" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>            </div>
-            <div className='mobile-content'>
-                <p>Please, feel free to take a look at my website. You can watch my video to understand more about me
-                    and my projects.
-                    Below there is a button where you can download my CV.
-                </p>
-                <div className='tech-icons-mobile'>
-                    <FaHtml5 />
-                    <FaCss3Alt />
-                    <FaJsSquare />
-                    <FaReact />
-                    <FaNodeJs />
-                    <FaDatabase />
-                </div>
-                <a href="./cv_Jamesson_seren.pdf" download onClick={handleDownloadClick}>Download CV
-                    
-                </a>
-            </div>
-        </section>
-    )
+              }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatDelay: 1,
+              }}
+            >
+              See Projects
+            </motion.p>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
 }

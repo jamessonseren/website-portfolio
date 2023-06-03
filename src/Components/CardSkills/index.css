@@ -1,0 +1,35 @@
+.card{
+    width:413px;
+    height: 353px;
+    margin: 25px 0;
+    padding: 15px;
+    transform: translateX(-1%) rotate(-360deg);
+    transition: transform 1s, opacity 0.5s; 
+    opacity: 1;
+    border-top-right-radius:80px;
+    box-shadow: 2px 4px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:#18245D;
+    
+    
+}
+.top-box{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card h1{
+    height: auto;
+}
+.card p:first-child{
+    color: var(--sec-color);
+    font-size: 60px;
+    width: auto;
+}
+
+/* .showCard{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+} */

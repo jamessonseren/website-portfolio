@@ -2,9 +2,9 @@
     width: 100%;
     max-width: var(--max-width);
     height: auto;
-    background-color:  var(--sec-background);
     text-align: center;
     padding: 15px 2%;
+    color: var(--white);
 
 }
 
@@ -15,32 +15,11 @@
     width: 100%;
     height: auto;
     flex-wrap: wrap;
-}
-.card{
-    width: 100%;
-    max-width:400px;
-    height: auto;
-    margin: 25px 0;
-    padding: 15px;
-    background-color: var(--yellow-light);
-    transform: translateX(-1%) rotate(-360deg);
-    transition: transform 1s, opacity 0.5s; 
-    opacity: 0;
-    border-radius: 15px;
-    box-shadow: 2px 4px 5px;
-    
-}
-.card img{
-    width: 100%;
-    padding: 25px 0;
-    height: auto;
+    margin-top: 50px;
 }
 
 
-.showCard{
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-}
+
 .card > h3, p{
     height: auto;
 }

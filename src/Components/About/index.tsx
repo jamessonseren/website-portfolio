@@ -1,8 +1,11 @@
 import './index.css'
 
-export default function About(){
+type AboutProps = {
+    id: string
+}
+export default function About({id}:AboutProps){
     return(
-        <section className="about-section">
+        <section id={id} className="about-section">
             <h1>About me</h1>
             <div className='author-info'>
                 <p>Hello, my name is Jamesson Seren, a 30-year-old Brazilian Fullstack developer. <br/><br/>
@@ -12,7 +15,7 @@ export default function About(){
                     Currently, I am attending Computer Science Bachelor's Degree at PUC Minas University and work with various technologies such as ReactJS, NextJS, NodeJS, and relational and non-relational databases, among others.
                     I am always looking to improve and advance my knowledge in technology, which allows me to be efficient and effective in any project.
                     I am open to new opportunities! If you have any questions, please do not hesitate to contact me.</p>
-                <img src="/Assets/Images/author-about.jpg" alt="author image" />
+                <img src="/Assets/Images/author-about.jpg" alt="author" />
             </div>
         </section>
     )

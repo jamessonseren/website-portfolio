@@ -3,46 +3,69 @@
     width: 100%;
     max-width: var(--max-width);
     height: auto;
-    min-height: calc(100vh - var(--header-height));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 5px 5%;
+    padding: 25px 5%;
 }
-.contact-section h1{
-    color: var(--main-color-dark);
+.contact-section h1, p{
+    color: var(--white);
+}
+.contact-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 55px;
+
 }
 .social-media{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     padding: 0 15px;
-    overflow-wrap: break-word;
+    justify-content: flex-start;
+    
 
 }
 .social-media-item{
     display: flex;
     margin: 15px 0;
     overflow-wrap: break-word;
+    justify-content: flex-start
     
 }
 
 .react-icons{
     font-size:2rem;
+    margin-right: 1rem;
 }
 
 .linkedin, .github, .youtube, .email{
     display: flex;
     width: 100%;
-    max-width: 500px;
     align-items: center;
-    height: auto;
 }
 
+div.contact-text{
+    width: 100%;
+    max-width: 400px;
+    height:100%;
+    line-height: 45px;
+    padding: 10px;
+    border-radius: 0 0 80px 0;
+    background-color: #18245d60; 
+}
+
+@media screen and (max-width:850px){
+    .contact-content{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width:380px){
     .social-media-item{
         text-align: center;

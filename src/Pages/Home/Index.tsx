@@ -1,13 +1,16 @@
 import BannerHome from "../../Components/BannerHome";
 import BannerSkills from "../../Components/BannerSkills";
-import {  ToastContainer } from "react-toastify";
+import About from "../../Components/About";
+import Contact from "../../Components/Contact";
 
 export default function Home() {
+    
     return (
         <>
             <BannerHome />
-            <BannerSkills />
-            <ToastContainer style={{ height: "auto" }}/>
+            <About id="about"/>
+            <BannerSkills id="skills"/>
+            <Contact id="contact"/>
         </>
 
     )

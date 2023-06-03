@@ -10,13 +10,9 @@
   --white: #fff;
   --black: #000;
 
-  --light: #d3c2c2;
-
-  --sec-background: #F2F2F2;
-
-  --yellow-light:#E2F263;
-
-  --main-color-dark: #011826;
+  --main-color: #1A224E;
+  
+  --sec-color:#EE6D52;
   
   --max-width: 1200px;
 
@@ -31,7 +27,7 @@ a{
   text-decoration: none;
 }
 body {
-  background-color: var(--sec-background);
+  background-color: #000725;
   
 }
 
