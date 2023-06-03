@@ -1,0 +1,33 @@
+.menu-desktop{
+    width: 50%;
+    height: auto;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+.about{
+    cursor: pointer;
+}
+.skills{
+    cursor: pointer;
+}
+.contact{
+    padding: 8px 25px;
+    border-radius: 5px;
+    transition: all .8s;
+    color:var(--white);
+    background-color: var(--sec-color);
+    cursor: pointer;
+}
+.skills:hover{
+    text-decoration: underline;
+}
+.projects:hover{
+    text-decoration: underline;
+
+} 
+.about:hover{
+    text-decoration: underline;
+}

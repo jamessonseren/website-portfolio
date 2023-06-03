@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { BiMenu } from "react-icons/bi";
 import { MenuMobile } from "../MenuMobile";
+import { MenuDesktop } from "../MenuDesktop";
 
 export default function Header() {
-  const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [showMenuMobile, setShowMenuMobile] = useState<boolean>(false);
 
   const toggleMenu = () => {
-    return setShowMenu(!showMenu);
+    return setShowMenuMobile(!showMenuMobile);
   };
 
   const logoRef = useRef<HTMLAnchorElement>(null);
@@ -28,21 +29,8 @@ export default function Header() {
           <img src="Assets/Images//logo.png" alt="Logo" />
         </Link>
         <BiMenu className="menu-icon" onClick={toggleMenu} />
-        <MenuMobile showMenuMobile={showMenu} setShowMenuMobile={setShowMenu} />
-        <nav className="menu">
-          <Link className="projects" to="/projects">
-            Projects
-          </Link>
-          <ScrollLink className="about" to="about" smooth={true} offset={-100} duration={500}>
-            About
-          </ScrollLink>
-          <ScrollLink className="skills" to="skills" smooth={true} offset={-100} duration={500}>
-            Skills
-          </ScrollLink>
-          <ScrollLink className="contact" to="contact" smooth={true} duration={500}>
-            Contact
-          </ScrollLink>
-        </nav>
+        <MenuMobile showMenuMobile={showMenuMobile} setShowMenuMobile={setShowMenuMobile} />
+        <MenuDesktop /> 
       </div>
     </header>
   );

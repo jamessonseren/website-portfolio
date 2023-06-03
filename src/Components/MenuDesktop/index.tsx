@@ -3,11 +3,8 @@ import { Link as ScrollLink } from "react-scroll";
 import "./index.css";
 import { useEffect, useState } from "react";
 
-interface MenuMobileProps {
-  showMenuMobile: boolean;
-  setShowMenuMobile: (show: boolean) => void;
-}
-export function MenuMobile(props: MenuMobileProps) {
+
+export function MenuDesktop() {
   const [projectPage, setProjectPage] = useState(false);
 
   const location = useLocation();
@@ -21,7 +18,7 @@ export function MenuMobile(props: MenuMobileProps) {
   }, []);
 
   const HandleScrollLinkClick = (to: string) => {
-    if (pathname === "/projects") {
+    if (pathname.startsWith("/projects")) {
       navigate("/");
 
       setTimeout(()=>{
@@ -34,12 +31,12 @@ export function MenuMobile(props: MenuMobileProps) {
               behavior: "smooth",
             });
           }
-      }, 500)
+      }, 1000)
     }
   };
 
   return (
-    <nav className={`menu-mobile ${props.showMenuMobile ? "show" : ""}`}>
+    <nav className='menu-desktop'>
       <Link className="projects" to="/projects">
         Projects
       </Link>
@@ -76,7 +73,7 @@ export function MenuMobile(props: MenuMobileProps) {
       ) : (
         
       <ScrollLink
-      className="contact-mobile"
+      className="contact"
       to="contact"
       smooth={true}
       offset={-100}
