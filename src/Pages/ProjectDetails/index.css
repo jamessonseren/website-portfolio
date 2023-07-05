@@ -29,8 +29,9 @@ section.projectDetails{
     line-height: 30px;
     font-weight: bold;
 }
-.project-detail img{
+.project-detail iframe{
     width: 100%;
+    height: 350px;
     max-width: 650px;
 }
 .project-detail a{

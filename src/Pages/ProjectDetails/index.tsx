@@ -9,6 +9,7 @@ export default function ProjectDetails() {
     id: string,
     name: string,
     image: string,
+    video: string,
     description: string,
     access:string
   }
@@ -42,9 +43,9 @@ export default function ProjectDetails() {
     <section className="projectDetails">
       <div className="project-detail">
         <h1>{project?.name}</h1>
-        <img src={project?.image} alt="" />
+        <iframe src={project?.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         <p>{project?.description}</p>
-        <a href={project?.access} target="_blank">See more...</a>
+        <a href={project?.access} target="_blank" rel="noreferrer">See more...</a>
       </div>
 
     </section>
