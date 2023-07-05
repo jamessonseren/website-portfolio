@@ -27,7 +27,7 @@ export default function Projects() {
                     return(
                         <article key={project.id}>
                             <h1>{project.name}</h1>
-                            <img src={project.image}></img>
+                            <img src={project.image} alt={project.name}></img>
                             <p>{project.shortDescription}</p>
                             <Link to={`/projects/${project.id}`}>Check it out</Link>
                             
